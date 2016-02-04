@@ -3,24 +3,7 @@
 
 himawaripy is a Python 3 script that fetches near-realtime (10 minutes delayed)
 picture of Earth as its taken by
-[Himawari 8 (ひまわり8号)](https://en.wikipedia.org/wiki/Himawari_8) and sets it
-as your desktop background.
-
-Set a cronjob that runs in every 10 minutes to automatically get the
-near-realtime picture of Earth.
-
-## Supported Desktop Environments
-### Tested
-* Unity 7
-
-### Not Tested
-* GNOME 3
-* MATE
-* LXDE
-* KDE
-
-### Not Supported
-* any other desktop environments that are not mentioned above.
+[Himawari 8 (ひまわり8号)](https://en.wikipedia.org/wiki/Himawari_8) and prints it to stdout. Forked from [boramalper/himawaripy](https://github.com/boramalper/himawaripy).
 
 ## Configuration
 You can configure the level of detail, by modifying the script. You can set the
@@ -31,35 +14,7 @@ time to download the tiles.
 You can also change the path of the latest picture, which is by default
 `~/.himawari/himawari-latest.png`, by changing the `output_file` variable.
 
-## Installation
-    cd ~
-    git clone https://github.com/boramalper/himawaripy.git
-    
-    # configure
-    cd ~/himawaripy
-    vi himawaripy.py
-    
-    # test whether it's working
-    ./himawaripy.py
-    
-    # set up a cronjob
-    crontab -e
-    # Add the line:
-    # */10 * * * * /home/USERNAME/himawaripy/himawaripy.py
-    
-### For KDE Users
-> So the issue here is that KDE does not support changing the desktop wallpaper
-> from the commandline, but it does support polling a directory for file changes
-> through the "Slideshow" desktop background option, whereby you can point KDE
-> to a folder and have it load a new picture at a certain interval.
->
-> The idea here is to:
->
-> * Set the cron for some interval (say 9 minutes)
-> * Open Desktop Settings -> Wallpaper -> Wallpaper Type -> Slideshow
-> * Add the `~/.himawari` dir to the slideshow list
-> * Set the interval check to 10 minutes (one minute after the cron, also
->   depending on your download speed)
+
 
 Many thanks to [xenithorb](https://github.com/xenithorb) [for the solution](https://github.com/xenithorb/himawaripy/commit/01d7c681ae7ce47f639672733d0f734574662833)!
 
