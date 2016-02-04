@@ -23,7 +23,7 @@ Many thanks to [xenithorb](https://github.com/xenithorb) [for the solution](http
     
 ## Attributions
 
-Thanks to *[Bora M. Alper](https://github.com/boramalper) for originally
+Thanks to *[Bora M. Alper](https://github.com/boramalper)* for originally
 creating this script.
 
 Thanks to *[MichaelPote](https://github.com/MichaelPote)* for the [initial
