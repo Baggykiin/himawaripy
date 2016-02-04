@@ -22,6 +22,10 @@ Many thanks to [xenithorb](https://github.com/xenithorb) [for the solution](http
 ![Earth, as 2016/02/04/13:30:00 GMT](http://i.imgur.com/4XA6WaM.jpg)
     
 ## Attributions
+
+Thanks to *[Bora M. Alper](https://github.com/boramalper) for originally
+creating this script.
+
 Thanks to *[MichaelPote](https://github.com/MichaelPote)* for the [initial
 implementation](https://gist.github.com/MichaelPote/92fa6e65eacf26219022) using
 Powershell Script.
