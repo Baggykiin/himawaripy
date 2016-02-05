@@ -10,11 +10,8 @@ from urllib.request import urlopen
 
 from PIL import Image
 
-<<<<<<< HEAD
-=======
 from multiprocessing import Pool, cpu_count, Value
 from itertools import product
->>>>>>> 60b75f8a59a6b2b7786187acca26ac4c41da7670
 
 # Configuration
 # =============
